@@ -1,0 +1,57 @@
+GET http://localhost:3000/datas
+
+###
+
+GET http://localhost:3000/datas/61e2fd5c9a1d0ebd8f38ed8c
+
+###
+
+POST http://localhost:3000/datas
+Content-Type: application/json
+
+{
+    "firstName": "Riki",
+    "lastName": "Rikica",
+    "email": "bera@gmail.com",
+    "username": "nijaz",
+    "password": "123",
+    "creditCard": {
+        "nameOnCard": "Nijaz Andelić",
+        "cardNumber": "1234567891011121",
+        "validThrough": "02/22",
+        "cvv": "201"
+    },
+    "movements": [{"price": 12, date: "undefined"}]
+}
+
+###
+
+DELETE http://localhost:3000/datas/62139602d2f65648d57ee5f4
+
+###
+
+GET http://localhost:3000/datas
+
+###
+
+PATCH http://localhost:3000/datas/6212bd999f04f821af374452
+Content-Type: application/json
+
+{
+    "lastName": "Andelić"
+}
+
+###
+
+PATCH http://localhost:3000/datas/61e97a42340ed4431a92c9b7
+Content-Type: application/json
+
+{
+    "creditCard": {
+      "nameOnCard": "Berin Fakic",
+      "cardNumber": "5475443545545435",
+      "validThrough": "1122",
+      "cvv": "221",
+      "balance": 10000
+    }
+}
