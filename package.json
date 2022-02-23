@@ -1,10 +1,10 @@
 {
   "name": "e-wallet-rest-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,14 @@
   "devDependencies": {
     "dotenv": "^12.0.4",
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndNijaz/e-wallet-rest-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndNijaz/e-wallet-rest-api/issues"
+  },
+  "homepage": "https://github.com/AndNijaz/e-wallet-rest-api#readme",
+  "description": ""
 }
